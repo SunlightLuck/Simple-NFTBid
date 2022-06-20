@@ -127,7 +127,7 @@ abstract contract NFTReceiver {
     ) external virtual returns (bytes4);
 }
 
-abstract contract CallistoNFT is ICallistoNFT {
+contract CallistoNFT is ICallistoNFT {
     using Address for address;
 
     mapping(uint256 => Properties) internal _tokenProperties;

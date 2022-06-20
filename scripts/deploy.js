@@ -19,7 +19,7 @@ async function main() {
 
   await calistoContract.deployed();
 
-  console.log("Greeter deployed to:", greeter.address);
+  console.log("NFT deployed to:", calistoContract.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
