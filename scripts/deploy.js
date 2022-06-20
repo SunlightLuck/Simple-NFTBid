@@ -15,7 +15,7 @@ async function main() {
 
   // We get the contract to deploy
   const calistoFactory = await hre.ethers.getContractFactory('CallistoNFT');
-  const calistoContract = await calistoFactory.deploy("CALLISTONFT", "CN", 1);
+  const calistoContract = await calistoFactory.deploy("CallistoNFT", "CN", 1);
 
   await calistoContract.deployed();
 
