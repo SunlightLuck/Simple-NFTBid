@@ -14,10 +14,10 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const Greeter = await hre.ethers.getContractFactory("Greeter");
-  const greeter = await Greeter.deploy("Hello, Hardhat!");
+  const calistoFactory = await hre.ethers.getContractFactory('CallistoNFT');
+  const calistoContract = await calistoFactory.deploy("CALLISTONFT", "CN", 1);
 
-  await greeter.deployed();
+  await calistoContract.deployed();
 
   console.log("Greeter deployed to:", greeter.address);
 }
